@@ -1,0 +1,1 @@
+call "%~dp0\ffxiv_tools" eval FFXIVTools.Release.migrate
