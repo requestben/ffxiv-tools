@@ -49,7 +49,6 @@ jobs:
       with:
         path: deps
         key: ${{ runner.os }}-${{ matrix.otp }}-${{ matrix.elixir }}-mix-${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}
-        restore-keys: ${{ runner.os }}-mix-
     - name: Install dependencies
       if: steps.mix-cache.outputs.cache-hit != 'true'
       run: mix deps.get
