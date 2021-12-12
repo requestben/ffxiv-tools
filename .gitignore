@@ -32,3 +32,6 @@ ffxiv_tools-*.tar
 npm-debug.log
 /assets/node_modules/
 
+# PLTs
+/priv/plts/*.plt
+/priv/plts/*.plt.hash
